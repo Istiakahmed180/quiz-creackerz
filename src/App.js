@@ -1,12 +1,28 @@
-import "./App.css";
-import Header from "./components/Header/Header";
-import Navbar from "./components/Navbar/Navbar";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import Home from "./components/Home/Home";
+import Routes from "./Layout/Routes";
 
 function App() {
+  const router = createBrowserRouter([
+    {
+      path: "/",
+      element: <Routes></Routes>,
+      children: [
+        {
+          path: "/",
+          element: <Home></Home>,
+        },
+        {
+          path: "/home",
+          loader: () => fetch("https://openapi.programming-hero.com/api/quiz"),
+          element: <Home></Home>,
+        },
+      ],
+    },
+  ]);
   return (
     <div>
-      <Navbar></Navbar>
-      <Header></Header>
+      <RouterProvider router={router}></RouterProvider>
     </div>
   );
 }
