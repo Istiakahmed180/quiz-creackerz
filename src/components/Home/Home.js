@@ -8,9 +8,11 @@ const Home = () => {
   return (
     <div>
       <Header></Header>
-      {quizs.data.map((quiz) => (
-        <Quiz key={quiz.id} quiz={quiz}></Quiz>
-      ))}
+      <div className="grid lg:grid-cols-2 grid-cols-1 my-12">
+        {quizs.data.map((quiz) => (
+          <Quiz key={quiz.id} quiz={quiz}></Quiz>
+        ))}
+      </div>
     </div>
   );
 };
