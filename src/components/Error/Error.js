@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Error = () => {
   return (
@@ -16,13 +17,13 @@ const Error = () => {
               But dont worry, you can find plenty of other things on our
               homepage.
             </p>
-            <a
+            <Link
               rel="noopener noreferrer"
-              href="#"
+              to="/"
               class="px-8 py-3 font-semibold rounded bg-red-400 text-gray-900"
             >
               Back to homepage
-            </a>
+            </Link>
           </div>
         </div>
       </section>
