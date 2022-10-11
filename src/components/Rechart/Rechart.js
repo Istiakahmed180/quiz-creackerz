@@ -15,7 +15,7 @@ const Rechart = () => {
   const rechart = useLoaderData();
   const { data } = rechart;
   return (
-    <div className="flex justify-center">
+    <div className="flex justify-center -z-50">
       <ComposedChart
         width={500}
         height={400}

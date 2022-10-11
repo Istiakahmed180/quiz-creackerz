@@ -1,13 +1,12 @@
-import React, { useState } from "react";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 const QuizInfo = ({ quiz }) => {
-  // console.log(quiz.id);
-  const { id, correctAnswer } = quiz;
+  const { correctAnswer } = quiz;
   const showToastMessage = () => {
     toast.success(`${correctAnswer}`, { autoClose: 3000 });
   };
+
   return (
     <div>
       <div className="mb-28 bg-[#9496c2] py-12 lg:w-3/4 w-96  mx-auto px-8 rounded-2xl">
@@ -50,6 +49,11 @@ const QuizInfo = ({ quiz }) => {
               required=""
             ></input>
             <label
+              onClick={({ correctAnswer }) =>
+                !correctAnswer
+                  ? toast.success("Currect Answer", { autoClose: 500 })
+                  : console.log("Incorrect")
+              }
               htmlFor="hosting-small"
               className="inline-flex justify-between items-center p-5 w-full text-gray-500 bg-white rounded-lg border border-gray-200 cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 dark:peer-checked:text-blue-500 peer-checked:border-blue-600 peer-checked:text-blue-600 hover:text-gray-600 hover:bg-[#d5d9ff] dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700"
             >

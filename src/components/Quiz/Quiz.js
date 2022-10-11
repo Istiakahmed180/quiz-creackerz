@@ -4,19 +4,19 @@ import { Link } from "react-router-dom";
 const Quiz = ({ quiz }) => {
   const { name, logo, total, id } = quiz;
   return (
-    <div className="my-4 mx-auto max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+    <div className="my-4 mx-auto max-w-sm bg-slate-800 rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
       <Link to="#">
         <img className="rounded-t-lg" src={logo} alt="" />
       </Link>
       <div className="p-5">
         <div className="flex justify-center">
-          <h5 className=" mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+          <h5 className=" mb-2 text-2xl font-bold tracking-tight text-white">
             {name}
           </h5>
         </div>
 
         <div className="flex justify-between items-center">
-          <p className=" font-semibold text-gray-700 dark:text-gray-400">
+          <p className=" font-semibold text-white dark:text-gray-400">
             Question: {total}
           </p>
           <Link
