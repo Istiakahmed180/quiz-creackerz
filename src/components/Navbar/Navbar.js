@@ -45,12 +45,12 @@ const Navbar = () => {
           </li>
           <li>
             <Link
-              to="/"
+              to="/statistics"
               aria-label="Product pricing"
               title="Product pricing"
               className="font-medium tracking-wide text-[#4255FF] hover:text-black hover:border-b-2 transition-colors duration-200 hover:text-deep-purple-accent-400"
             >
-              Pricing
+              Statistics
             </Link>
           </li>
           <li>
@@ -147,12 +147,12 @@ const Navbar = () => {
                     </li>
                     <li>
                       <Link
-                        to="/"
+                        to="/statistics"
                         aria-label="Product pricing"
                         title="Product pricing"
                         className="font-medium tracking-wide text-[#4255FF] hover:text-black hover:border-b-2 transition-colors duration-200 hover:text-deep-purple-accent-400"
                       >
-                        Pricing
+                        Statistics
                       </Link>
                     </li>
                     <li>

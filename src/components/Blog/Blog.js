@@ -3,23 +3,23 @@ import React from "react";
 const Blog = () => {
   return (
     <div>
-      <section class="dark:dark:bg-gray-800 dark:dark:text-gray-100">
-        <div class="container flex flex-col justify-center p-4 mx-auto md:p-8">
-          <p class="p-2 text-sm font-medium tracking-wider text-center uppercase">
+      <section className="dark:dark:bg-gray-800 dark:dark:text-gray-100">
+        <div className="container flex flex-col justify-center p-4 mx-auto md:p-8">
+          <p className="p-2 text-sm font-medium tracking-wider text-center uppercase">
             How it works
           </p>
-          <h2 class="mb-12 text-4xl font-bold leading-none text-center sm:text-5xl">
+          <h2 className="mb-12 text-4xl font-bold leading-none text-center sm:text-5xl">
             Frequently Asked Questions
           </h2>
-          <div class="flex flex-col divide-y sm:px-8 lg:px-12 xl:px-32 divide-gray-700">
+          <div className="flex flex-col divide-y sm:px-8 lg:px-12 xl:px-32 divide-gray-700">
             <details>
-              <summary class="py-2 outline-none cursor-pointer focus:underline">
+              <summary className="py-2 outline-none cursor-pointer focus:underline">
                 <span className="font-semibold text-[#4255FF]">
                   Qustion No:1:-
                 </span>
                 What is the purpose of react router?
               </summary>
-              <div class="px-4 pb-4">
+              <div className="px-4 pb-4">
                 <p>
                   React Router is a standard library for routing in React. It
                   enables the navigation among views of various components in a
@@ -33,13 +33,13 @@ const Blog = () => {
               </div>
             </details>
             <details open="">
-              <summary class="py-2 outline-none cursor-pointer focus:underline">
+              <summary className="py-2 outline-none cursor-pointer focus:underline">
                 <span className="font-semibold text-[#4255FF]">
                   Qustion No:2:-
                 </span>
                 How context api works in react?
               </summary>
-              <div class="px-4 pb-4">
+              <div className="px-4 pb-4">
                 <p>
                   The React Context API is a way for a React app to effectively
                   produce global variables that can be passed around. This is
@@ -56,13 +56,13 @@ const Blog = () => {
               </div>
             </details>
             <details open="">
-              <summary class="py-2 outline-none cursor-pointer focus:underline">
+              <summary className="py-2 outline-none cursor-pointer focus:underline">
                 <span className="font-semibold text-[#4255FF]">
                   Qustion No:3:-
                 </span>
-                What is useref in react?
+                What is useRef in react?
               </summary>
-              <div class="px-4 pb-4 space-y-2">
+              <div className="px-4 pb-4 space-y-2">
                 <p>
                   Essentially, useRef is like a “box” that can hold a mutable
                   value in its .current property. You might be familiar with
