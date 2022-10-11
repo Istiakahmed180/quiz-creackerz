@@ -45,12 +45,12 @@ const Navbar = () => {
           </li>
           <li>
             <Link
-              to="/"
+              to="/quiz"
               aria-label="Our product"
               title="Our product"
               className="font-medium tracking-wide text-[#4255FF] hover:text-black hover:border-b-2 transition-colors duration-200 hover:text-deep-purple-accent-400"
             >
-              Features
+              Quiz
             </Link>
           </li>
           <li>
@@ -157,12 +157,12 @@ const Navbar = () => {
                     </li>
                     <li>
                       <Link
-                        to="/"
+                        to="/quiz"
                         aria-label="Our product"
                         title="Our product"
                         className="font-medium tracking-wide text-[#4255FF] hover:text-black hover:border-b-2 transition-colors duration-200 hover:text-deep-purple-accent-400"
                       >
-                        Features
+                        Quiz
                       </Link>
                     </li>
                     <li>

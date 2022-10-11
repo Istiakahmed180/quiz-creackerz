@@ -2,8 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const Quiz = ({ quiz }) => {
-  const { name, logo, total } = quiz;
-  console.log(quiz);
+  const { name, logo, total, id } = quiz;
   return (
     <div className="my-4 mx-auto max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
       <Link to="#">
@@ -18,10 +17,10 @@ const Quiz = ({ quiz }) => {
 
         <div className="flex justify-between items-center">
           <p className=" font-semibold text-gray-700 dark:text-gray-400">
-            Total: {total}
+            Question: {total}
           </p>
           <Link
-            to="#"
+            to={`/quiz/${id}`}
             className="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
           >
             Read more
