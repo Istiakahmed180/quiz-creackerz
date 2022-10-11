@@ -49,11 +49,6 @@ const QuizInfo = ({ quiz }) => {
               required=""
             ></input>
             <label
-              onClick={({ correctAnswer }) =>
-                !correctAnswer
-                  ? toast.success("Currect Answer", { autoClose: 500 })
-                  : console.log("Incorrect")
-              }
               htmlFor="hosting-small"
               className="inline-flex justify-between items-center p-5 w-full text-gray-500 bg-white rounded-lg border border-gray-200 cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 dark:peer-checked:text-blue-500 peer-checked:border-blue-600 peer-checked:text-blue-600 hover:text-gray-600 hover:bg-[#d5d9ff] dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700"
             >
