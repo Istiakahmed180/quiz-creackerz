@@ -55,12 +55,12 @@ const Navbar = () => {
           </li>
           <li>
             <Link
-              to="/"
+              to="/blog"
               aria-label="About us"
               title="About us"
               className="font-medium tracking-wide text-[#4255FF] hover:text-black hover:border-b-2 transition-colors duration-200 hover:text-deep-purple-accent-400"
             >
-              About us
+              Blog
             </Link>
           </li>
         </ul>
@@ -157,12 +157,12 @@ const Navbar = () => {
                     </li>
                     <li>
                       <Link
-                        to="/"
+                        to="/blog"
                         aria-label="About us"
                         title="About us"
                         className="font-medium tracking-wide text-[#4255FF] hover:text-black hover:border-b-2 transition-colors duration-200 hover:text-deep-purple-accent-400"
                       >
-                        About us
+                        Blog
                       </Link>
                     </li>
                     <li>
