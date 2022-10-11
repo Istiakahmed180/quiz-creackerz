@@ -1,10 +1,10 @@
 import React from "react";
 import { useLoaderData } from "react-router-dom";
-import ReactDetails from "../ReactDetails/ReactDetails";
+import QuizInfo from "../QuizInfo/QuizInfo";
 
 const QuizDetails = () => {
   const quizTopic = useLoaderData();
-  const { name, logo, total, id, questions } = quizTopic.data;
+  const { name, questions } = quizTopic.data;
   return (
     <div>
       <div className="flex justify-center">
@@ -14,7 +14,7 @@ const QuizDetails = () => {
       </div>
       <div>
         {questions.map((quiz) => (
-          <ReactDetails quiz={quiz}></ReactDetails>
+          <QuizInfo quiz={quiz}></QuizInfo>
         ))}
       </div>
     </div>

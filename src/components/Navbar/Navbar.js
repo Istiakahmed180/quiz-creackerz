@@ -45,16 +45,6 @@ const Navbar = () => {
           </li>
           <li>
             <Link
-              to="/quiz"
-              aria-label="Our product"
-              title="Our product"
-              className="font-medium tracking-wide text-[#4255FF] hover:text-black hover:border-b-2 transition-colors duration-200 hover:text-deep-purple-accent-400"
-            >
-              Quiz
-            </Link>
-          </li>
-          <li>
-            <Link
               to="/"
               aria-label="Product pricing"
               title="Product pricing"
@@ -153,16 +143,6 @@ const Navbar = () => {
                         className="font-medium tracking-wide text-[#4255FF] hover:text-black hover:border-b-2 transition-colors duration-200 hover:text-deep-purple-accent-400"
                       >
                         Home
-                      </Link>
-                    </li>
-                    <li>
-                      <Link
-                        to="/quiz"
-                        aria-label="Our product"
-                        title="Our product"
-                        className="font-medium tracking-wide text-[#4255FF] hover:text-black hover:border-b-2 transition-colors duration-200 hover:text-deep-purple-accent-400"
-                      >
-                        Quiz
                       </Link>
                     </li>
                     <li>
